@@ -1,55 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>⚡️ VelocitySync: Seamless Data Integration for Modern Teams | Fast, Secure & Reliable</title>
-    <meta name="description" content="VelocitySync is the leading digital service for seamless, real-time data integration. Get instant access to unified data streams with our secure, reliable, and performance-friendly platform. Start your 14-day free trial today!">
-
+    <title>SkySail AI | Automate Your Business Strategy with Modern AI</title>
+    <meta name="description" content="The first-of-its-kind intelligence engine, SkySail, gets you maximum efficiency and growth in one click. Start your free trial today.">
+    <meta name="keywords" content="AI strategy, business automation, digital service, SkySail, efficiency, growth">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://yourdomain.com/landing-page-keyword-rich-url">
+    
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        // Define custom color variable for easy Tailwind use and consistency
-                        'brg-accent': '#004225', // A deep, rich British Racing Green
-                    },
-                }
-            }
-        }
-    </script>
-
     <style>
-        /* Define the British Racing Green variable (can be overridden in config above) */
+        /* Custom British Racing Green Accent */
         :root {
-            --brg-accent: #004225;
+            --color-brg: #004225; /* A deep, rich British Racing Green */
+            --color-brg-light: #005930;
         }
 
-        /* Focus state for accessibility and subtle design pop */
-        .btn-focus:focus {
-            outline: 3px solid var(--brg-accent);
-            outline-offset: 2px;
-        }
+        /* Applying the custom color to Tailwind's 'accent' utility */
+        .bg-brg { background-color: var(--color-brg); }
+        .hover\:bg-brg-light:hover { background-color: var(--color-brg-light); }
+        .text-brg { color: var(--color-brg); }
+        .border-brg { border-color: var(--color-brg); }
 
-        /* Custom scroll-margin-top for smooth internal link jumps, e.g., features */
-        section {
-            scroll-margin-top: 5rem;
+        /* General Body and Font - Clean, modern, sans-serif */
+        body {
+            font-family: 'Inter', 'Montserrat', 'Poppins', sans-serif;
+            background-color: #F8F8F8; /* Near-white / very light grey background */
+            color: #1A1A1A; /* Dark charcoal for text */
         }
-
-        /* Subtle hover scale for buttons to give a modern, interactive feel */
-        .hover-scale-btn:hover {
+        
+        /* Subtle Micro-Animation for hover states */
+        .micro-anim-scale:hover {
             transform: scale(1.02);
             transition: transform 0.2s ease-in-out;
         }
 
-        /* Subtle hover on feature icons */
-        .hover-icon-effect:hover svg {
-            color: var(--brg-accent);
-            transform: translateY(-2px);
-            transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+        /* Focus state for accessibility - Using the accent color */
+        *:focus {
+            outline: 3px solid var(--color-brg-light);
+            outline-offset: 2px;
         }
     </style>
 
@@ -57,251 +48,271 @@
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "serviceType": "Data Integration Platform",
-      "name": "VelocitySync",
-      "description": "Seamless, real-time data integration service for modern businesses seeking unified data streams.",
+      "serviceType": "AI Business Strategy Automation",
       "provider": {
         "@type": "Organization",
-        "name": "VelocitySync Technologies",
-        "logo": "https://www.yourdomain.com/logo.svg"
+        "name": "SkySail AI",
+        "url": "https://yourdomain.com",
+        "logo": "https://yourdomain.com/logo.svg",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-555-AI-HELP",
+          "contactType": "Customer service"
+        }
       },
-      "areaServed": "Global",
-      "slogan": "Unify Your Data. Accelerate Your Decisions."
+      "name": "SkySail AI Intelligence Engine",
+      "description": "Automate your business strategy and achieve maximum efficiency with our modern AI service."
     }
     </script>
 </head>
 
-<body class="bg-gray-50 text-gray-800 antialiased font-sans">
+<body class="antialiased min-h-screen">
 
-    <header class="sticky top-0 z-50 bg-white shadow-sm">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-extrabold tracking-tight text-brg-accent" aria-label="VelocitySync Home">
-                Velocity<span class="text-gray-900">Sync</span>
+            <a href="#" class="text-2xl font-bold text-brg tracking-tight" aria-label="SkySail AI Home">
+                SkySail AI
             </a>
-            <nav class="hidden md:flex space-x-8">
-                <a href="#features" class="text-gray-600 hover:text-brg-accent transition duration-150">Features</a>
-                <a href="#social-proof" class="text-gray-600 hover:text-brg-accent transition duration-150">Testimonials</a>
-                <a href="URL_TO_YOUR_BLOG" class="text-gray-600 hover:text-brg-accent transition duration-150">Resources</a>
+            <nav class="hidden md:flex space-x-8 text-charcoal font-medium">
+                <a href="#features" class="hover:text-brg transition-colors">Features</a>
+                <a href="#pricing" class="hover:text-brg transition-colors">Pricing</a>
+                <a href="#trust" class="hover:text-brg transition-colors">Trust & Safety</a>
+                <a href="https://yourdomain.com/blog" class="hover:text-brg transition-colors">Resources</a>
             </nav>
-            <a href="#cta-section" class="hidden md:inline-flex px-4 py-2 text-sm font-semibold text-brg-accent border-2 border-brg-accent rounded-lg hover:bg-brg-accent hover:text-white transition duration-200 hover-scale-btn btn-focus">
-                Login
+            <a href="#cta-form" class="hidden md:inline-flex px-5 py-2 text-sm font-semibold rounded-lg text-white bg-brg hover:bg-brg-light transition-colors micro-anim-scale shadow-lg shadow-brg/30" aria-label="Start Your 7-Day Free Trial">
+                Start Free Trial
             </a>
-            <button class="md:hidden text-gray-600 hover:text-brg-accent p-2 rounded-md transition duration-150" aria-label="Open menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
         </div>
     </header>
 
     <main>
-        <section class="relative pt-16 pb-20 sm:pt-24 sm:pb-32 lg:pt-32 bg-white overflow-hidden">
+
+        <section class="pt-16 pb-24 lg:pt-24 lg:pb-32 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold tracking-tight text-gray-900 mb-4">
-                    Unlock <span class="text-brg-accent">Real-Time VelocitySync</span> <br class="hidden sm:inline">for Unified Data Streams
+                
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 mb-4">
+                    Automate Your Business Strategy <span class="text-brg">With Modern AI</span>
                 </h1>
-                <p class="mt-4 max-w-3xl mx-auto text-xl text-gray-600">
-                    Stop fighting fragmented data. VelocitySync provides a **secure, lightning-fast platform** that instantly unifies all your sources, empowering smarter, quicker decisions.
+                
+                <p class="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
+                    The first-of-its-kind intelligence engine, **SkySail**, gets you maximum efficiency and growth in one click. Stop guessing, start scaling.
                 </p>
+                
                 <div class="mt-10 flex justify-center space-x-3">
-                    <a href="#cta-section" class="px-8 py-4 text-lg font-bold text-white bg-brg-accent rounded-xl shadow-lg hover:bg-opacity-90 transition duration-200 hover-scale-btn btn-focus uppercase tracking-wider">
-                        Start Your 14-Day Free Trial 🚀
+                    <a href="#cta-form" class="px-10 py-4 text-lg font-bold rounded-xl text-white bg-brg hover:bg-brg-light transition-colors micro-anim-scale shadow-xl shadow-brg/40 uppercase tracking-wider" aria-label="Start Your 7-Day Free Trial Now">
+                        Start Your 7-Day Free Trial
                     </a>
                 </div>
-                <p class="mt-6 text-sm text-gray-500">
-                    No credit card required. Join 500+ modern teams today.
+                
+                <p class="mt-4 text-sm text-gray-500">
+                    Full access plans start at $99/month. No credit card required to start.
                 </p>
-            </div>
 
-            <div class="mt-16 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="bg-gray-100 rounded-2xl p-6 md:p-10 shadow-xl border-t-4 border-brg-accent/50">
-                    <pre class="overflow-x-auto text-sm text-gray-700 font-mono text-left">
-<span class="text-brg-accent">const</span> unifiedData = <span class="text-gray-900">sync</span>(<span class="text-red-600">'sources'</span>).<span class="text-brg-accent">to</span>(<span class="text-red-600">'warehouse'</span>);
-<span class="text-brg-accent">console</span>.<span class="text-gray-900">log</span>(<span class="text-red-600">`Data Status: ${unifiedData.status}`</span>); <span class="text-gray-500">// Output: 'Synced in 0.5s'</span>
-                    </pre>
+                <div class="mt-16 mx-auto max-w-5xl bg-gray-200 h-64 sm:h-96 rounded-2xl shadow-2xl border-4 border-brg/50 flex items-center justify-center">
+                    <span class="text-xl text-gray-700 font-semibold">
+                        [Placeholder for Product Dashboard Screenshot or Video Demo]
+                        <img src="https://yourdomain.com/hero-visual.png" alt="SkySail AI platform dashboard showing automated business strategy overview" class="sr-only">
+                    </span>
                 </div>
+
             </div>
         </section>
 
-        <hr class="border-gray-200 w-full max-w-7xl mx-auto my-12">
-
-        <section id="features" class="py-16 sm:py-24 bg-gray-50">
+        <section class="py-12 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 text-center mb-12">
-                    Key Benefits: **Why VelocitySync is Different**
+                <h2 class="text-center text-xl font-semibold text-gray-500 mb-8 tracking-wide uppercase">
+                    Trusted by forward-thinking companies
                 </h2>
-
-                <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-10">
-                    <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 hover-icon-effect border-t-4 border-brg-accent/50">
-                        <div class="flex justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-brg-accent/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" role="img" aria-label="Icon of a lightning bolt, representing speed.">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">
-                            <span class="font-extrabold">Instant</span> Real-Time Sync
-                        </h3>
-                        <p class="text-gray-600">
-                            Say goodbye to stale data. Our engine pushes updates in milliseconds, giving you a live, accurate view of your entire operation.
-                        </p>
+                <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5 place-items-center">
+                    <div class="col-span-1 flex justify-center h-12">
+                        <span class="text-gray-400 text-3xl font-light hover:text-brg transition-colors cursor-default">Client A</span>
                     </div>
-
-                    <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 hover-icon-effect border-t-4 border-brg-accent/50">
-                        <div class="flex justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-brg-accent/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" role="img" aria-label="Icon of a lock, representing security.">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v3h8z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">
-                            Enterprise-Grade **Security**
-                        </h3>
-                        <p class="text-gray-600">
-                            Your data is safe with us. We use end-to-end encryption and compliance standards that meet the demands of global enterprises.
-                        </p>
+                    <div class="col-span-1 flex justify-center h-12">
+                        <span class="text-gray-400 text-3xl font-light hover:text-brg transition-colors cursor-default">Client B</span>
                     </div>
-
-                    <div class="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 hover-icon-effect border-t-4 border-brg-accent/50">
-                        <div class="flex justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-brg-accent/70" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" role="img" aria-label="Icon of a wrench, representing simple setup.">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37a1.724 1.724 0 002.572-1.065z" />
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">
-                            **Zero-Code** Setup
-                        </h3>
-                        <p class="text-gray-600">
-                            Go live in minutes, not weeks. Our intuitive interface requires zero coding knowledge, making data unification accessible to all.
-                        </p>
+                    <div class="col-span-1 flex justify-center h-12">
+                        <span class="text-gray-400 text-3xl font-light hover:text-brg transition-colors cursor-default">Client C</span>
+                    </div>
+                    <div class="col-span-1 flex justify-center h-12">
+                        <span class="text-gray-400 text-3xl font-light hover:text-brg transition-colors cursor-default">Client D</span>
+                    </div>
+                    <div class="col-span-2 flex justify-center h-12 md:col-span-1 lg:col-span-1">
+                        <span class="text-gray-400 text-3xl font-light hover:text-brg transition-colors cursor-default">Client E</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <hr class="border-gray-200 w-full max-w-7xl mx-auto my-12">
-
-        <section id="social-proof" class="py-16 sm:py-24">
+        <section id="features" class="py-24 bg-gray-50">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 text-center mb-16">
-                    Trusted by <span class="text-brg-accent">Leading Innovators</span> Globally
-                </h2>
-
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
-                    <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-brg-accent/70 hover:shadow-xl transition duration-300">
-                        <blockquote class="text-lg italic text-gray-700">
-                            "VelocitySync cut our data preparation time by 80%. The real-time capabilities are a total game-changer for our BI team."
-                        </blockquote>
-                        <div class="mt-4 text-right">
-                            <p class="font-semibold text-gray-900">- Alex R.</p>
-                            <p class="text-sm text-gray-500">CTO, <span class="text-brg-accent">Quantum Leap Systems</span></p>
-                        </div>
-                    </div>
-                    <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-brg-accent/70 hover:shadow-xl transition duration-300">
-                        <blockquote class="text-lg italic text-gray-700">
-                            "The setup was genuinely zero-code. We integrated 5 platforms in under an hour. Highly recommend this service."
-                        </blockquote>
-                        <div class="mt-4 text-right">
-                            <p class="font-semibold text-gray-900">- Dr. S. Chen</p>
-                            <p class="text-sm text-gray-500">Head of Data, <span class="text-brg-accent">FinTech Global</span></p>
-                        </div>
-                    </div>
-                     <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-brg-accent/70 hover:shadow-xl transition duration-300 hidden lg:block">
-                        <blockquote class="text-lg italic text-gray-700">
-                            "Reliable, fast, and the support is fantastic. The British Racing Green branding is also a nice, distinctive touch!"
-                        </blockquote>
-                        <div class="mt-4 text-right">
-                            <p class="font-semibold text-gray-900">- Jamie L.</p>
-                            <p class="text-sm text-gray-500">Product Manager, <span class="text-brg-accent">Aura Labs</span></p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-16 pt-10 border-t border-gray-200">
-                    <p class="text-center text-lg font-semibold text-gray-600 mb-8">
-                        Our Partners & Integrations:
+                <div class="text-center">
+                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-4">
+                        Unlock Unprecedented Efficiency
+                    </h2>
+                    <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-600">
+                        SkySail solves your biggest pain-points: manual effort, fragmented data, and slow decision-making.
                     </p>
-                    <div class="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5 items-center justify-items-center opacity-70">
-                        <div class="h-8 w-auto text-gray-500 hover:text-brg-accent transition duration-300" role="img" aria-label="Client logo placeholder 1: Tech Corp">
-                            <span class="text-2xl font-bold">TechCorp</span>
+                </div>
+
+                <div class="mt-20 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+                    
+                    <div class="text-center micro-anim-scale p-6 rounded-xl shadow-lg bg-white border border-gray-100">
+                        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-brg/10 text-brg mb-4">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" alt="Icon for Automated Data Analysis">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0h6"/>
+                            </svg>
                         </div>
-                        <div class="h-8 w-auto text-gray-500 hover:text-brg-accent transition duration-300" role="img" aria-label="Client logo placeholder 2: Data Hub">
-                             <span class="text-2xl font-bold">DataHub</span>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Real-Time Data Streams</h3>
+                        <p class="text-base text-gray-500">
+                            Connect and analyze all your data sources instantly, eliminating manual reporting delays.
+                        </p>
+                    </div>
+
+                    <div class="text-center micro-anim-scale p-6 rounded-xl shadow-lg bg-white border border-gray-100">
+                        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-brg/10 text-brg mb-4">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" alt="Icon for Predictive Strategy">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
                         </div>
-                        <div class="h-8 w-auto text-gray-500 hover:text-brg-accent transition duration-300 hidden sm:block" role="img" aria-label="Client logo placeholder 3: Future Systems">
-                            <span class="text-2xl font-bold">FutureSys</span>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Predictive Strategy</h3>
+                        <p class="text-base text-gray-500">
+                            Our AI forecasts market shifts, giving you a competitive edge 12 months ahead of time.
+                        </p>
+                    </div>
+
+                    <div class="text-center micro-anim-scale p-6 rounded-xl shadow-lg bg-white border border-gray-100">
+                        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-brg/10 text-brg mb-4">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" alt="Icon for Cross-Platform Automation">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m6 0a9 9 0 01-9 9m9-9a9 9 0 00-9-9m12 0h-2.586a1 1 0 00-.707.293l-1.414 1.414a1 1 0 01-.707.293H7.5"/>
+                            </svg>
                         </div>
-                        <div class="h-8 w-auto text-gray-500 hover:text-brg-accent transition duration-300" role="img" aria-label="Client logo placeholder 4: Global Metrics">
-                            <span class="text-2xl font-bold">Metrics.io</span>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Full Automation</h3>
+                        <p class="text-base text-gray-500">
+                            Eliminate repetitive tasks by automating workflows across 100+ third-party tools.
+                        </p>
+                    </div>
+
+                    <div class="text-center micro-anim-scale p-6 rounded-xl shadow-lg bg-white border border-gray-100">
+                        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-brg/10 text-brg mb-4">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" alt="Icon for Security and Compliance">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.047A12.003 12.003 0 0012 21c3.638 0 7.072-1.144 9.998-3.047z"/>
+                            </svg>
                         </div>
-                         <div class="h-8 w-auto text-gray-500 hover:text-brg-accent transition duration-300 hidden lg:block" role="img" aria-label="Client logo placeholder 5: Apex Solutions">
-                            <span class="text-2xl font-bold">Apex</span>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Enterprise-Grade Security</h3>
+                        <p class="text-base text-gray-500">
+                            We ensure total compliance and data privacy with end-to-end encryption.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="mt-16 text-center">
+                    <a href="#pricing" class="inline-flex items-center text-brg font-semibold hover:text-brg-light transition-colors group">
+                        See All Features in the Documentation
+                        <svg class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="trust" class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="lg:grid lg:grid-cols-3 lg:gap-8 items-center">
+                    <div class="lg:col-span-1">
+                        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl tracking-tight mb-4">
+                            Trusted Results. Real Savings.
+                        </h2>
+                        <p class="mt-4 text-lg text-gray-600">
+                            Our clients see immediate ROI. Don't just take our word for it.
+                        </p>
+                        <div class="mt-8">
+                            <a href="#cta-form" class="inline-flex px-6 py-3 text-base font-semibold rounded-lg text-white bg-brg hover:bg-brg-light transition-colors micro-anim-scale shadow-lg shadow-brg/30" aria-label="Join the SkySail revolution">
+                                Join The Revolution →
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-12 lg:mt-0 lg:col-span-2 p-8 bg-gray-50 rounded-2xl shadow-xl border-l-4 border-brg">
+                        <blockquote class="text-xl italic text-gray-700">
+                            <svg class="w-8 h-8 text-brg opacity-50 mb-4 inline-block" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.84 3.75l-.34 1.58C13.25 5.86 13 6.6 13 7.5c0 3.32 2.68 6 6 6s6-2.68 6-6c0-1.6-1.55-3.05-3.41-3.75l.34-1.58C22.25 1.86 24 2.6 24 4.5c0 3.32-2.68 6-6 6s-6-2.68-6-6c0-1.6 1.55-3.05 3.41-3.75zM0 3.75l-.34 1.58C-.75 5.86-1 6.6-1 7.5c0 3.32 2.68 6 6 6s6-2.68 6-6c0-1.6-1.55-3.05-3.41-3.75l.34-1.58C8.25 1.86 10 2.6 10 4.5c0 3.32-2.68 6-6 6S-2 7.82-2 4.5c0-1.6 1.55-3.05 3.41-3.75z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+                            <p class="mt-2">
+                                "Since switching, I canceled $3,800/month in tools. I saved money and boosted performance by 20%. **Our agency runs itself now.** This is the one tool you need for AI strategy."
+                            </p>
+                        </blockquote>
+                        <div class="mt-6">
+                            <p class="text-lg font-bold text-gray-900">Alex Johnson</p>
+                            <p class="text-base text-brg font-medium">CEO of Apex Consulting</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="cta-section" class="py-20 bg-brg-accent/5">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 mb-4">
-                    Ready to Accelerate Your Data Strategy?
+        <section id="cta-form" class="py-20 bg-brg">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-extrabold text-white sm:text-4xl mb-4">
+                    Ready to Automate Your Growth?
                 </h2>
-                <p class="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-                    Take the first step towards unified data streams. Start your risk-free trial today and see the VelocitySync difference.
+                <p class="mt-4 text-xl text-brg/20 max-w-2xl mx-auto">
+                    Take the first step towards a truly efficient business with SkySail.
                 </p>
-                <a href="#cta-section" class="px-10 py-4 text-xl font-bold text-white bg-brg-accent rounded-xl shadow-2xl hover:bg-opacity-90 transition duration-200 hover-scale-btn btn-focus uppercase tracking-wider">
-                    Claim Your Free Trial Today 🆓
-                </a>
+                
+                <div class="mt-10">
+                    <a href="#header" class="px-12 py-4 text-xl font-bold rounded-xl text-brg bg-white hover:bg-gray-100 transition-colors micro-anim-scale shadow-2xl shadow-black/20 uppercase tracking-wider" aria-label="Sign Up for SkySail AI">
+                        Sign Up Today
+                    </a>
+                </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="bg-gray-900 text-gray-300 pt-16 pb-12">
+    <footer class="bg-gray-900 pt-16 pb-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-extrabold tracking-tight text-brg-accent mb-4">
-                        Velocity<span class="text-white">Sync</span>
-                    </h3>
-                    <p class="text-sm mb-2">Unify Your Data. Accelerate Your Decisions.</p>
-                    <p class="text-sm">Email: <a href="mailto:support@velocitysync.com" class="hover:text-brg-accent transition duration-150">support@velocitysync.com</a></p>
-                    <p class="text-sm">© 2025 VelocitySync Technologies</p>
+            <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
+                
+                <div class="col-span-2 md:col-span-1">
+                    <p class="text-3xl font-bold text-brg mb-4">SkySail AI</p>
+                    <p class="text-sm text-gray-400">
+                        San Francisco, CA 94107<br>
+                        Email: <a href="mailto:hello@skysail.ai" class="hover:text-brg transition-colors">hello@skysail.ai</a>
+                    </p>
                 </div>
 
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Product</h4>
-                    <ul class="space-y-3 text-sm">
-                        <li><a href="#features" class="hover:text-brg-accent transition duration-150">Features Overview</a></li>
-                        <li><a href="#" class="hover:text-brg-accent transition duration-150">Pricing Plans</a></li>
-                        <li><a href="#" class="hover:text-brg-accent transition duration-150">Integrations List</a></li>
+                    <ul class="space-y-3">
+                        <li><a href="#features" class="text-gray-400 hover:text-brg transition-colors text-sm">Features</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-brg transition-colors text-sm">Pricing</a></li>
+                        <li><a href="#trust" class="text-gray-400 hover:text-brg transition-colors text-sm">Testimonials</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
-                    <ul class="space-y-3 text-sm">
-                        <li><a href="#" class="hover:text-brg-accent transition duration-150">About Us</a></li>
-                        <li><a href="#" class="hover:text-brg-accent transition duration-150">Careers</a></li>
-                        <li><a href="#" class="hover:text-brg-accent transition duration-150">Terms of Service</a></li>
+                    <ul class="space-y-3">
+                        <li><a href="https://yourdomain.com/about" class="text-gray-400 hover:text-brg transition-colors text-sm">About Us</a></li>
+                        <li><a href="https://yourdomain.com/careers" class="text-gray-400 hover:text-brg transition-colors text-sm">Careers</a></li>
+                        <li><a href="https://yourdomain.com/press" class="text-gray-400 hover:text-brg transition-colors text-sm">Press</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Resources</h4>
-                    <ul class="space-y-3 text-sm">
-                        <li><a href="URL_TO_YOUR_BLOG" class="hover:text-brg-accent transition duration-150">Blog & News</a></li>
-                        <li><a href="#" class="hover:text-brg-accent transition duration-150">Knowledge Base</a></li>
-                        <li><a href="#" class="hover:text-brg-accent transition duration-150">Contact Sales</a></li>
+                    <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a href="https://yourdomain.com/terms" class="text-gray-400 hover:text-brg transition-colors text-sm">Terms of Service</a></li>
+                        <li><a href="https://yourdomain.com/privacy" class="text-gray-400 hover:text-brg transition-colors text-sm">Privacy Policy</a></li>
+                        <li><a href="https://yourdomain.com/security" class="text-gray-400 hover:text-brg transition-colors text-sm">Security</a></li>
                     </ul>
                 </div>
+
             </div>
 
-            <div class="mt-10 pt-8 border-t border-gray-700 text-center">
-                <p class="text-xs text-gray-500">
-                    <a href="#" class="hover:text-brg-accent transition duration-150">Privacy Policy</a> | <a href="#" class="hover:text-brg-accent transition duration-150">Security & Compliance</a>
+            <div class="mt-16 border-t border-gray-800 pt-8">
+                <p class="text-center text-sm text-gray-500">
+                    &copy; 2025 SkySail AI. All rights reserved.
                 </p>
             </div>
+
         </div>
     </footer>
 
