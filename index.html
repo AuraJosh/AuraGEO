@@ -1,320 +1,305 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkySail AI | Automate Your Business Strategy with Modern AI</title>
-    <meta name="description" content="The first-of-its-kind intelligence engine, SkySail, gets you maximum efficiency and growth in one click. Start your free trial today.">
-    <meta name="keywords" content="AI strategy, business automation, digital service, SkySail, efficiency, growth">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://yourdomain.com/landing-page-keyword-rich-url">
-    
+    <title>Aura GEO - Geo-Intelligent Automation</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    // Define custom colors based on the British Racing Green palette
+                    colors: {
+                        'accent-primary': '#004225', // British Racing Green
+                        'accent-secondary': '#006400', // Dark Green/Forest Green
+                        'bg-dark': '#0F172A', // Slate/Dark Charcoal
+                        'text-light': '#F9FAFB', // Off-White
+                        'text-highlight': '#A1A1AA', // Gray
+                    },
+                    // Use DM Sans for a modern, clean look
+                    fontFamily: {
+                        sans: ['DM Sans', 'sans-serif'],
+                    },
+                    // Ensure highly rounded corners for the 'funky tech' feel
+                    borderRadius: {
+                        'xl': '1rem',
+                        '2xl': '1.5rem',
+                        '3xl': '2rem',
+                    }
+                }
+            }
+        }
+    </script>
 
     <style>
-        /* Custom British Racing Green Accent */
-        :root {
-            --color-brg: #004225; /* A deep, rich British Racing Green */
-            --color-brg-light: #005930;
+        /* Custom Keyframes for the 'tech' feel */
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-250px * 3)); } /* Adjust based on number of logos */
+        }
+        .animate-scroll-logos {
+            animation: scroll 30s linear infinite;
         }
 
-        /* Applying the custom color to Tailwind's 'accent' utility */
-        .bg-brg { background-color: var(--color-brg); }
-        .hover\:bg-brg-light:hover { background-color: var(--color-brg-light); }
-        .text-brg { color: var(--color-brg); }
-        .border-brg { border-color: var(--color-brg); }
-
-        /* General Body and Font - Clean, modern, sans-serif */
-        body {
-            font-family: 'Inter', 'Montserrat', 'Poppins', sans-serif;
-            background-color: #F8F8F8; /* Near-white / very light grey background */
-            color: #1A1A1A; /* Dark charcoal for text */
+        /* Subtle background glow/overlay for a clean tech look */
+        .tech-bg-gradient {
+            background-image: radial-gradient(circle at 50% 10%, rgba(0, 66, 37, 0.1) 0%, transparent 40%);
         }
         
-        /* Subtle Micro-Animation for hover states */
-        .micro-anim-scale:hover {
-            transform: scale(1.02);
-            transition: transform 0.2s ease-in-out;
-        }
-
-        /* Focus state for accessibility - Using the accent color */
-        *:focus {
-            outline: 3px solid var(--color-brg-light);
-            outline-offset: 2px;
+        /* British Racing Green Button Style */
+        .btn-primary {
+            @apply inline-flex items-center justify-center px-8 py-3 text-base font-medium text-text-light bg-accent-primary border border-transparent rounded-2xl shadow-lg transition duration-300 ease-in-out hover:bg-accent-secondary focus:outline-none focus:ring-4 focus:ring-accent-primary focus:ring-opacity-50 transform hover:scale-[1.02];
         }
     </style>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "AI Business Strategy Automation",
-      "provider": {
-        "@type": "Organization",
-        "name": "SkySail AI",
-        "url": "https://yourdomain.com",
-        "logo": "https://yourdomain.com/logo.svg",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "telephone": "+1-555-AI-HELP",
-          "contactType": "Customer service"
-        }
-      },
-      "name": "SkySail AI Intelligence Engine",
-      "description": "Automate your business strategy and achieve maximum efficiency with our modern AI service."
-    }
-    </script>
 </head>
+<body class="font-sans bg-text-light text-bg-dark min-h-screen antialiased">
 
-<body class="antialiased min-h-screen">
-
-    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-sm shadow-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold text-brg tracking-tight" aria-label="SkySail AI Home">
-                SkySail AI
-            </a>
-            <nav class="hidden md:flex space-x-8 text-charcoal font-medium">
-                <a href="#features" class="hover:text-brg transition-colors">Features</a>
-                <a href="#pricing" class="hover:text-brg transition-colors">Pricing</a>
-                <a href="#trust" class="hover:text-brg transition-colors">Trust & Safety</a>
-                <a href="https://yourdomain.com/blog" class="hover:text-brg transition-colors">Resources</a>
+    <header class="relative overflow-hidden pt-8 pb-20 tech-bg-gradient">
+        <div class="container mx-auto px-6">
+            <nav class="flex justify-between items-center mb-16">
+                <a href="#" class="flex items-center space-x-2 text-2xl font-bold text-bg-dark">
+                    <img src="AuraLogo.png" alt="Aura GEO Logo" class="h-8">
+                    <span>Aura GEO</span>
+                </a>
+                <div class="hidden md:flex space-x-8 text-sm font-medium">
+                    <a href="#features" class="text-bg-dark hover:text-accent-primary transition duration-150">Features</a>
+                    <a href="#pricing" class="text-bg-dark hover:text-accent-primary transition duration-150">Pricing</a>
+                    <a href="#" class="text-bg-dark hover:text-accent-primary transition duration-150">Docs</a>
+                </div>
+                <a href="#" class="btn-primary text-sm px-4 py-2">
+                    Log In
+                </a>
             </nav>
-            <a href="#cta-form" class="hidden md:inline-flex px-5 py-2 text-sm font-semibold rounded-lg text-white bg-brg hover:bg-brg-light transition-colors micro-anim-scale shadow-lg shadow-brg/30" aria-label="Start Your 7-Day Free Trial">
-                Start Free Trial
-            </a>
+
+            <div class="lg:flex lg:items-center lg:space-x-12">
+                <div class="lg:w-1/2">
+                    <span class="inline-block text-sm font-semibold text-accent-primary uppercase mb-3 tracking-wider">The Geo-Intelligence Engine</span>
+                    <h1 class="text-5xl lg:text-6xl font-extrabold leading-tight text-bg-dark mb-6">
+                        Geo-Intelligent Automation for the Modern Enterprise
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        Aura GEO utilizes cutting-edge spatial AI to optimize logistics, forecasting, and resource allocation instantly.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-4">
+                        <a href="#" class="btn-primary">
+                            Launch Free Geo-Audit
+                        </a>
+                        <a href="#" class="px-8 py-3 text-base font-medium text-bg-dark border border-gray-300 rounded-2xl transition duration-300 ease-in-out hover:bg-gray-100 hover:border-bg-dark">
+                            See the Demo
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-500">
+                        No credit card required. Explore our Pro features for 14 days.
+                    </p>
+
+                    <div class="mt-12 p-6 bg-white border border-gray-200 rounded-2xl shadow-xl">
+                        <blockquote class="text-gray-700 italic border-l-4 border-accent-primary pl-4">
+                            "Aura GEO reduced our fleet's idle time by 18% in the first quarter. The precision is unmatched."
+                        </blockquote>
+                        <p class="mt-4 text-sm font-semibold text-bg-dark">
+                            — Jessica Chen, Head of Operations at GlobalLogistics Inc.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="lg:w-1/2 mt-12 lg:mt-0 relative">
+                    <img src="hero-visual-placeholder.jpg" alt="Aura GEO platform visual" class="rounded-3xl shadow-2xl w-full h-auto object-cover border-4 border-accent-primary/20">
+                    <div class="absolute inset-0 bg-bg-dark/20 rounded-3xl pointer-events-none"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-20 overflow-hidden relative">
+            <div class="absolute inset-y-0 left-0 w-12 bg-text-light/80 z-10"></div>
+            <div class="absolute inset-y-0 right-0 w-12 bg-text-light/80 z-10"></div>
+            <div class="flex space-x-12 animate-scroll-logos py-4 whitespace-nowrap" style="width: fit-content; min-width: 200%;">
+                <span class="text-xl font-bold text-gray-400 opacity-80 min-w-[250px] inline-block">Google Maps</span>
+                <span class="text-xl font-bold text-gray-400 opacity-80 min-w-[250px] inline-block">ESRI</span>
+                <span class="text-xl font-bold text-gray-400 opacity-80 min-w-[250px] inline-block">Planet Labs</span>
+                <span class="text-xl font-bold text-gray-400 opacity-80 min-w-[250px] inline-block">Google Maps</span>
+                <span class="text-xl font-bold text-gray-400 opacity-80 min-w-[250px] inline-block">ESRI</span>
+                <span class="text-xl font-bold text-gray-400 opacity-80 min-w-[250px] inline-block">Planet Labs</span>
+            </div>
         </div>
     </header>
 
-    <main>
+    <section id="metrics" class="py-20 bg-bg-dark text-text-light">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12">Data That Drives Decisions</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
 
-        <section class="pt-16 pb-24 lg:pt-24 lg:pb-32 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-gray-900 mb-4">
-                    Automate Your Business Strategy <span class="text-brg">With Modern AI</span>
-                </h1>
-                
-                <p class="mt-6 text-xl text-gray-600 max-w-3xl mx-auto">
-                    The first-of-its-kind intelligence engine, **SkySail**, gets you maximum efficiency and growth in one click. Stop guessing, start scaling.
-                </p>
-                
-                <div class="mt-10 flex justify-center space-x-3">
-                    <a href="#cta-form" class="px-10 py-4 text-lg font-bold rounded-xl text-white bg-brg hover:bg-brg-light transition-colors micro-anim-scale shadow-xl shadow-brg/40 uppercase tracking-wider" aria-label="Start Your 7-Day Free Trial Now">
-                        Start Your 7-Day Free Trial
-                    </a>
+                <div class="text-center p-6 bg-bg-dark/80 border border-accent-secondary/50 rounded-2xl shadow-lg transform transition duration-300 hover:scale-[1.03]">
+                    <svg class="w-10 h-10 mx-auto mb-3 text-accent-primary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM12 6l-6 6 1.41 1.41L12 9.83l4.59 4.58L18 12l-6-6z"/>
+                    </svg>
+                    <p class="text-4xl font-extrabold text-text-light">5 Billion</p>
+                    <p class="text-sm font-medium text-text-highlight mt-1">Geo-Points</p>
                 </div>
-                
-                <p class="mt-4 text-sm text-gray-500">
-                    Full access plans start at $99/month. No credit card required to start.
-                </p>
 
-                <div class="mt-16 mx-auto max-w-5xl bg-gray-200 h-64 sm:h-96 rounded-2xl shadow-2xl border-4 border-brg/50 flex items-center justify-center">
-                    <span class="text-xl text-gray-700 font-semibold">
-                        [Placeholder for Product Dashboard Screenshot or Video Demo]
-                        <img src="https://yourdomain.com/hero-visual.png" alt="SkySail AI platform dashboard showing automated business strategy overview" class="sr-only">
-                    </span>
+                <div class="text-center p-6 bg-bg-dark/80 border border-accent-secondary/50 rounded-2xl shadow-lg transform transition duration-300 hover:scale-[1.03]">
+                    <svg class="w-10 h-10 mx-auto mb-3 text-accent-primary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5z"/>
+                    </svg>
+                    <p class="text-4xl font-extrabold text-text-light">99.8%</p>
+                    <p class="text-sm font-medium text-text-highlight mt-1">Accuracy</p>
+                </div>
+
+                <div class="text-center p-6 bg-bg-dark/80 border border-accent-secondary/50 rounded-2xl shadow-lg transform transition duration-300 hover:scale-[1.03]">
+                    <svg class="w-10 h-10 mx-auto mb-3 text-accent-primary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                    </svg>
+                    <p class="text-4xl font-extrabold text-text-light">75+</p>
+                    <p class="text-sm font-medium text-text-highlight mt-1">Integrations</p>
+                </div>
+
+                <div class="text-center p-6 bg-bg-dark/80 border border-accent-secondary/50 rounded-2xl shadow-lg transform transition duration-300 hover:scale-[1.03]">
+                    <svg class="w-10 h-10 mx-auto mb-3 text-accent-primary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20 6H4c-1.1 0-1.99.9-1.99 2L2 19c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V8c0-1.1-.9-2-2-2zm0 13H4V8h16v11zM9 10h6v6H9z"/>
+                    </svg>
+                    <p class="text-4xl font-extrabold text-text-light">200</p>
+                    <p class="text-sm font-medium text-text-highlight mt-1">Countries Coverage</p>
                 </div>
 
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="py-12 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-center text-xl font-semibold text-gray-500 mb-8 tracking-wide uppercase">
-                    Trusted by forward-thinking companies
-                </h2>
-                <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5 place-items-center">
-                    <div class="col-span-1 flex justify-center h-12">
-                        <span class="text-gray-400 text-3xl font-light hover:text-brg transition-colors cursor-default">Client A</span>
-                    </div>
-                    <div class="col-span-1 flex justify-center h-12">
-                        <span class="text-gray-400 text-3xl font-light hover:text-brg transition-colors cursor-default">Client B</span>
-                    </div>
-                    <div class="col-span-1 flex justify-center h-12">
-                        <span class="text-gray-400 text-3xl font-light hover:text-brg transition-colors cursor-default">Client C</span>
-                    </div>
-                    <div class="col-span-1 flex justify-center h-12">
-                        <span class="text-gray-400 text-3xl font-light hover:text-brg transition-colors cursor-default">Client D</span>
-                    </div>
-                    <div class="col-span-2 flex justify-center h-12 md:col-span-1 lg:col-span-1">
-                        <span class="text-gray-400 text-3xl font-light hover:text-brg transition-colors cursor-default">Client E</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="pricing" class="py-20 bg-text-light">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-4 text-bg-dark">Pricing That Scales With Your Vision</h2>
+            <p class="text-center text-lg text-gray-600 mb-16">Choose the plan that's right for your operational needs.</p>
 
-        <section id="features" class="py-24 bg-gray-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-4">
-                        Unlock Unprecedented Efficiency
-                    </h2>
-                    <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-600">
-                        SkySail solves your biggest pain-points: manual effort, fragmented data, and slow decision-making.
-                    </p>
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-                <div class="mt-20 grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
+                <div class="p-8 border border-gray-200 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300">
+                    <h3 class="text-2xl font-bold text-bg-dark">Navigator</h3>
+                    <p class="mt-1 text-gray-500 text-sm">Billed Annually</p>
+                    <p class="mt-4 text-5xl font-extrabold text-bg-dark">$49<span class="text-lg font-medium text-gray-500">/mo</span></p>
                     
-                    <div class="text-center micro-anim-scale p-6 rounded-xl shadow-lg bg-white border border-gray-100">
-                        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-brg/10 text-brg mb-4">
-                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" alt="Icon for Automated Data Analysis">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0h6"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Real-Time Data Streams</h3>
-                        <p class="text-base text-gray-500">
-                            Connect and analyze all your data sources instantly, eliminating manual reporting delays.
-                        </p>
-                    </div>
-
-                    <div class="text-center micro-anim-scale p-6 rounded-xl shadow-lg bg-white border border-gray-100">
-                        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-brg/10 text-brg mb-4">
-                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" alt="Icon for Predictive Strategy">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Predictive Strategy</h3>
-                        <p class="text-base text-gray-500">
-                            Our AI forecasts market shifts, giving you a competitive edge 12 months ahead of time.
-                        </p>
-                    </div>
-
-                    <div class="text-center micro-anim-scale p-6 rounded-xl shadow-lg bg-white border border-gray-100">
-                        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-brg/10 text-brg mb-4">
-                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" alt="Icon for Cross-Platform Automation">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m6 0a9 9 0 01-9 9m9-9a9 9 0 00-9-9m12 0h-2.586a1 1 0 00-.707.293l-1.414 1.414a1 1 0 01-.707.293H7.5"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Full Automation</h3>
-                        <p class="text-base text-gray-500">
-                            Eliminate repetitive tasks by automating workflows across 100+ third-party tools.
-                        </p>
-                    </div>
-
-                    <div class="text-center micro-anim-scale p-6 rounded-xl shadow-lg bg-white border border-gray-100">
-                        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-brg/10 text-brg mb-4">
-                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true" alt="Icon for Security and Compliance">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.047A12.003 12.003 0 0012 21c3.638 0 7.072-1.144 9.998-3.047z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-2">Enterprise-Grade Security</h3>
-                        <p class="text-base text-gray-500">
-                            We ensure total compliance and data privacy with end-to-end encryption.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="mt-16 text-center">
-                    <a href="#pricing" class="inline-flex items-center text-brg font-semibold hover:text-brg-light transition-colors group">
-                        See All Features in the Documentation
-                        <svg class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+                    <a href="#" class="btn-primary w-full mt-6 text-base py-3">
+                        Get Started
                     </a>
-                </div>
-            </div>
-        </section>
 
-        <section id="trust" class="py-24 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="lg:grid lg:grid-cols-3 lg:gap-8 items-center">
-                    <div class="lg:col-span-1">
-                        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl tracking-tight mb-4">
-                            Trusted Results. Real Savings.
-                        </h2>
-                        <p class="mt-4 text-lg text-gray-600">
-                            Our clients see immediate ROI. Don't just take our word for it.
-                        </p>
-                        <div class="mt-8">
-                            <a href="#cta-form" class="inline-flex px-6 py-3 text-base font-semibold rounded-lg text-white bg-brg hover:bg-brg-light transition-colors micro-anim-scale shadow-lg shadow-brg/30" aria-label="Join the SkySail revolution">
-                                Join The Revolution →
-                            </a>
-                        </div>
-                    </div>
+                    <ul class="mt-8 space-y-4 text-gray-700">
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span title="Up to 5,000 API calls per month.">Basic API Access</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span title="Limit of 5 concurrent data layers.">Standard Geo-Query Tool</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span title="Response time within 48 hours.">Email Support</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-10 border-4 border-accent-primary bg-bg-dark text-text-light rounded-3xl shadow-2xl scale-[1.05] relative">
+                    <span class="absolute top-0 right-0 -mt-3 -mr-3 px-3 py-1 text-xs font-bold uppercase tracking-wider bg-accent-primary text-text-light rounded-full shadow-lg">Most Popular</span>
                     
-                    <div class="mt-12 lg:mt-0 lg:col-span-2 p-8 bg-gray-50 rounded-2xl shadow-xl border-l-4 border-brg">
-                        <blockquote class="text-xl italic text-gray-700">
-                            <svg class="w-8 h-8 text-brg opacity-50 mb-4 inline-block" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.84 3.75l-.34 1.58C13.25 5.86 13 6.6 13 7.5c0 3.32 2.68 6 6 6s6-2.68 6-6c0-1.6-1.55-3.05-3.41-3.75l.34-1.58C22.25 1.86 24 2.6 24 4.5c0 3.32-2.68 6-6 6s-6-2.68-6-6c0-1.6 1.55-3.05 3.41-3.75zM0 3.75l-.34 1.58C-.75 5.86-1 6.6-1 7.5c0 3.32 2.68 6 6 6s6-2.68 6-6c0-1.6-1.55-3.05-3.41-3.75l.34-1.58C8.25 1.86 10 2.6 10 4.5c0 3.32-2.68 6-6 6S-2 7.82-2 4.5c0-1.6 1.55-3.05 3.41-3.75z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
-                            <p class="mt-2">
-                                "Since switching, I canceled $3,800/month in tools. I saved money and boosted performance by 20%. **Our agency runs itself now.** This is the one tool you need for AI strategy."
-                            </p>
-                        </blockquote>
-                        <div class="mt-6">
-                            <p class="text-lg font-bold text-gray-900">Alex Johnson</p>
-                            <p class="text-base text-brg font-medium">CEO of Apex Consulting</p>
-                        </div>
-                    </div>
+                    <h3 class="text-3xl font-bold text-text-light">Surveyor</h3>
+                    <p class="mt-1 text-text-highlight text-sm line-through">Normally $249</p>
+                    <p class="mt-4 text-6xl font-extrabold text-text-light">$149<span class="text-xl font-medium text-text-highlight">/mo</span></p>
+                    
+                    <a href="#" class="btn-primary w-full mt-6 text-base py-3 bg-accent-secondary hover:bg-accent-primary focus:ring-accent-secondary">
+                        Upgrade Now
+                    </a>
+
+                    <ul class="mt-8 space-y-4 text-text-light">
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent-secondary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span title="No cap on API calls.">Advanced API Access</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent-secondary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span title="New satellite data feeds delivered every week.">Real-Time Satellite Feeds</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent-secondary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span title="Response time within 24 hours via chat/email.">Priority Chat Support</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="p-8 border border-gray-200 rounded-3xl shadow-xl hover:shadow-2xl transition duration-300">
+                    <h3 class="text-2xl font-bold text-bg-dark">Cartographer</h3>
+                    <p class="mt-1 text-gray-500 text-sm">Includes Dedicated Analyst</p>
+                    <p class="mt-4 text-5xl font-extrabold text-bg-dark">$399<span class="text-lg font-medium text-gray-500">/mo</span></p>
+
+                    <a href="#" class="px-8 py-3 text-base font-medium text-text-light bg-bg-dark border border-transparent rounded-2xl shadow-lg transition duration-300 ease-in-out hover:bg-gray-800 focus:outline-none focus:ring-4 focus:ring-bg-dark/50 w-full mt-6">
+                        Contact Sales
+                    </a>
+
+                    <ul class="mt-8 space-y-4 text-gray-700">
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span title="Global Content Delivery Network, guaranteed 99.99% uptime.">Enterprise API</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span title="Includes dedicated Machine Learning Operations support.">Custom Model Training</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-accent-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <span title="Guaranteed response time within 4 hours.">Dedicated Account Manager</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="cta-form" class="py-20 bg-brg">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-extrabold text-white sm:text-4xl mb-4">
-                    Ready to Automate Your Growth?
-                </h2>
-                <p class="mt-4 text-xl text-brg/20 max-w-2xl mx-auto">
-                    Take the first step towards a truly efficient business with SkySail.
-                </p>
-                
-                <div class="mt-10">
-                    <a href="#header" class="px-12 py-4 text-xl font-bold rounded-xl text-brg bg-white hover:bg-gray-100 transition-colors micro-anim-scale shadow-2xl shadow-black/20 uppercase tracking-wider" aria-label="Sign Up for SkySail AI">
-                        Sign Up Today
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto p-10 bg-white border border-gray-200 rounded-3xl shadow-xl">
+                <h2 class="text-3xl font-bold text-center mb-3 text-bg-dark">Customize Your Coverage Zones</h2>
+                <p class="text-center text-lg text-gray-600 mb-10">Select the level of regional data density needed:</p>
+
+                <div class="flex flex-col md:flex-row bg-gray-100 p-2 rounded-2xl shadow-inner space-y-2 md:space-y-0 md:space-x-2">
+                    
+                    <div class="w-full md:w-1/4 p-4 text-center cursor-pointer rounded-xl bg-accent-primary text-text-light shadow-md transition duration-200">
+                        <p class="font-bold text-lg">Single Region</p>
+                        <p class="text-sm opacity-80">$99 per region</p>
+                    </div>
+
+                    <div class="w-full md:w-1/4 p-4 text-center cursor-pointer rounded-xl text-bg-dark hover:bg-white transition duration-200">
+                        <p class="font-bold text-lg">2 - 5 Regions</p>
+                        <p class="text-sm">$75 per region</p>
+                    </div>
+
+                    <div class="w-full md:w-1/4 p-4 text-center cursor-pointer rounded-xl text-bg-dark hover:bg-white transition duration-200">
+                        <p class="font-bold text-lg">6 - 15 Regions</p>
+                        <p class="text-sm">$59 per region</p>
+                    </div>
+
+                    <div class="w-full md:w-1/4 p-4 text-center cursor-pointer rounded-xl text-bg-dark hover:bg-white transition duration-200">
+                        <p class="font-bold text-lg">16+ Regions (Global)</p>
+                        <p class="text-sm text-accent-primary font-semibold">Custom Quote</p>
+                    </div>
+                </div>
+
+                <div class="mt-8 text-center">
+                    <a href="#" class="btn-primary py-4 px-12 text-lg">
+                        Build Your Custom Plan
                     </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
-
-    <footer class="bg-gray-900 pt-16 pb-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 gap-8 md:grid-cols-4">
-                
-                <div class="col-span-2 md:col-span-1">
-                    <p class="text-3xl font-bold text-brg mb-4">SkySail AI</p>
-                    <p class="text-sm text-gray-400">
-                        San Francisco, CA 94107<br>
-                        Email: <a href="mailto:hello@skysail.ai" class="hover:text-brg transition-colors">hello@skysail.ai</a>
-                    </p>
-                </div>
-
-                <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Product</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#features" class="text-gray-400 hover:text-brg transition-colors text-sm">Features</a></li>
-                        <li><a href="#pricing" class="text-gray-400 hover:text-brg transition-colors text-sm">Pricing</a></li>
-                        <li><a href="#trust" class="text-gray-400 hover:text-brg transition-colors text-sm">Testimonials</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Company</h4>
-                    <ul class="space-y-3">
-                        <li><a href="https://yourdomain.com/about" class="text-gray-400 hover:text-brg transition-colors text-sm">About Us</a></li>
-                        <li><a href="https://yourdomain.com/careers" class="text-gray-400 hover:text-brg transition-colors text-sm">Careers</a></li>
-                        <li><a href="https://yourdomain.com/press" class="text-gray-400 hover:text-brg transition-colors text-sm">Press</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
-                    <ul class="space-y-3">
-                        <li><a href="https://yourdomain.com/terms" class="text-gray-400 hover:text-brg transition-colors text-sm">Terms of Service</a></li>
-                        <li><a href="https://yourdomain.com/privacy" class="text-gray-400 hover:text-brg transition-colors text-sm">Privacy Policy</a></li>
-                        <li><a href="https://yourdomain.com/security" class="text-gray-400 hover:text-brg transition-colors text-sm">Security</a></li>
-                    </ul>
-                </div>
-
+    <footer class="py-12 bg-bg-dark text-text-highlight">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Aura GEO. All rights reserved.</p>
+            <div class="mt-4 space-x-6 text-sm">
+                <a href="#" class="hover:text-accent-primary transition duration-150">Terms of Service</a>
+                <a href="#" class="hover:text-accent-primary transition duration-150">Privacy Policy</a>
+                <a href="#" class="hover:text-accent-primary transition duration-150">Support</a>
             </div>
-
-            <div class="mt-16 border-t border-gray-800 pt-8">
-                <p class="text-center text-sm text-gray-500">
-                    &copy; 2025 SkySail AI. All rights reserved.
-                </p>
-            </div>
-
         </div>
     </footer>
-
 </body>
 </html>
