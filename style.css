@@ -1,0 +1,388 @@
+.desktop-1,
+.desktop-1 * {
+  box-sizing: border-box;
+}
+.desktop-1 {
+  background: #060012;
+  height: 2466px;
+  position: relative;
+  overflow: hidden;
+}
+.ellipse-9 {
+  background: #a10074;
+  border-radius: 50%;
+  opacity: 0.3;
+  width: 311px;
+  height: 426px;
+  position: absolute;
+  left: -206px;
+  top: 807px;
+  filter: blur(100px);
+}
+.ellipse-3 {
+  background: #4f0067;
+  border-radius: 50%;
+  opacity: 0.5;
+  width: 512px;
+  height: 326px;
+  position: absolute;
+  left: 828px;
+  top: 270px;
+  filter: blur(100px);
+}
+.ellipse-1 {
+  background: #4f0067;
+  border-radius: 50%;
+  opacity: 0.5;
+  width: 512px;
+  height: 326px;
+  position: absolute;
+  left: 1139px;
+  top: 1026px;
+  filter: blur(100px);
+}
+.ellipse-7 {
+  background: #4f0067;
+  border-radius: 50%;
+  opacity: 0.3;
+  width: 512px;
+  height: 326px;
+  position: absolute;
+  left: 423px;
+  top: 758px;
+  filter: blur(100px);
+}
+.ellipse-4 {
+  background: #17005d;
+  border-radius: 50%;
+  opacity: 0.3;
+  width: 311px;
+  height: 426px;
+  position: absolute;
+  left: 100px;
+  top: 1139px;
+  filter: blur(100px);
+}
+.ellipse-5 {
+  background: #17005d;
+  border-radius: 50%;
+  opacity: 0.5;
+  width: 487px;
+  height: 200px;
+  position: absolute;
+  left: -232px;
+  top: 32px;
+  filter: blur(100px);
+}
+.ellipse-6 {
+  background: #17005d;
+  border-radius: 50%;
+  opacity: 0.5;
+  width: 234px;
+  height: 200px;
+  position: absolute;
+  left: -32px;
+  top: 493px;
+  filter: blur(100px);
+}
+.ellipse-2 {
+  background: #4f0067;
+  border-radius: 50%;
+  opacity: 0.5;
+  width: 512px;
+  height: 326px;
+  position: absolute;
+  left: -324px;
+  top: 579px;
+  filter: blur(100px);
+}
+.ellipse-42 {
+  background: #17005d;
+  border-radius: 50%;
+  opacity: 0.5;
+  width: 311px;
+  height: 426px;
+  position: absolute;
+  left: 1322px;
+  top: 704px;
+  filter: blur(100px);
+}
+.ellipse-8 {
+  background: #a10074;
+  border-radius: 50%;
+  opacity: 0.3;
+  width: 311px;
+  height: 426px;
+  position: absolute;
+  left: 1184px;
+  top: 0px;
+  filter: blur(100px);
+}
+.text {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  position: absolute;
+  left: 353px;
+  top: 132px;
+  width: 825px;
+  height: 38px;
+}
+.rectangle-20 {
+  background: #e4e4e4;
+  width: 1440px;
+  height: 97px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.nav-bar {
+  position: absolute;
+  inset: 0;
+}
+.group-34 {
+  width: 622px;
+  height: 42px;
+  position: static;
+}
+.about {
+  color: #000000;
+  text-align: left;
+  font-family: "Metropolis-Bold", sans-serif;
+  font-size: 32px;
+  line-height: 27.5px;
+  font-weight: 700;
+  text-decoration: underline;
+  position: absolute;
+  right: 40.97%;
+  left: 51.46%;
+  width: 7.57%;
+  bottom: 97%;
+  top: 1.3%;
+  height: 1.7%;
+}
+.pricing {
+  color: #000000;
+  text-align: left;
+  font-family: "Metropolis-Bold", sans-serif;
+  font-size: 32px;
+  line-height: 27.5px;
+  font-weight: 700;
+  text-decoration: underline;
+  position: absolute;
+  right: 23.68%;
+  left: 67.85%;
+  width: 8.47%;
+  bottom: 97%;
+  top: 1.3%;
+  height: 1.7%;
+}
+.contact {
+  color: #000000;
+  text-align: left;
+  font-family: "Metropolis-Bold", sans-serif;
+  font-size: 32px;
+  line-height: 27.5px;
+  font-weight: 700;
+  text-decoration: underline;
+  position: absolute;
+  right: 5.35%;
+  left: 85.21%;
+  width: 9.44%;
+  bottom: 97%;
+  top: 1.3%;
+  height: 1.7%;
+}
+.hero {
+  position: absolute;
+  inset: 0;
+}
+.the-leading-geo-company-focusing-solely-on-you {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Metropolis-Bold", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  position: absolute;
+  left: 202px;
+  top: 213px;
+  width: 541px;
+  height: 312px;
+}
+.group-1 {
+  width: 263px;
+  height: 92px;
+  position: static;
+}
+.rectangle-1 {
+  background: #01cded;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 5px;
+  width: 263px;
+  height: 92px;
+  position: absolute;
+  left: 202px;
+  top: 525px;
+}
+.get-your-free-geo-score-now {
+  color: #101010;
+  text-align: center;
+  font-family: var(--regular-font-family, "Sora-Regular", sans-serif);
+  font-size: var(--regular-font-size, 24px);
+  font-weight: var(--regular-font-weight, 400);
+  position: absolute;
+  left: calc(50% - 491px);
+  top: 542px;
+  width: 208px;
+  height: 75px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+}
+.group-2 {
+  width: 263px;
+  height: 92px;
+  position: static;
+}
+.rectangle-12 {
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 1px;
+  width: 263px;
+  height: 92px;
+  position: absolute;
+  left: 488px;
+  top: 525px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.contact-us {
+  color: #ffffff;
+  text-align: center;
+  font-family: var(--regular-font-family, "Sora-Regular", sans-serif);
+  font-size: var(--regular-font-size, 24px);
+  font-weight: var(--regular-font-weight, 400);
+  position: absolute;
+  left: 546px;
+  top: 557px;
+  width: 148px;
+  height: 27px;
+  transform-origin: 0 0;
+  transform: rotate(0deg) scale(1, 1);
+  -webkit-text-stroke: 1px #000000;
+}
+.companies-using-geo {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Sora-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: absolute;
+  left: 622.93px;
+  top: 787px;
+}
+.line-1 {
+  width: 1440.01px;
+  height: 0px;
+  position: absolute;
+  left: 0px;
+  top: 713.5px;
+  transform: translate(0px, -6.5px);
+  overflow: visible;
+}
+.group-33 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-19 {
+  background: rgba(55, 54, 54, 0.51);
+  border-radius: 15px;
+  width: 1063.82px;
+  height: 81.2px;
+  position: absolute;
+  left: 188px;
+  top: 828.03px;
+  transform-origin: 0 0;
+  transform: rotate(-0.543deg) scale(1, 1);
+}
+.image-5 {
+  width: 224.17px;
+  height: 34.18px;
+  position: absolute;
+  left: 566.52px;
+  top: 846.73px;
+  transform-origin: 0 0;
+  transform: rotate(-0.564deg) scale(1, 1);
+  object-fit: cover;
+}
+.image-6 {
+  width: 251.53px;
+  height: 91.14px;
+  position: absolute;
+  left: 223.95px;
+  top: 820.74px;
+  transform-origin: 0 0;
+  transform: rotate(-0.564deg) scale(1, 1);
+  object-fit: cover;
+}
+.image-7 {
+  width: 90.51px;
+  height: 48.68px;
+  position: absolute;
+  left: 880.78px;
+  top: 836.99px;
+  transform-origin: 0 0;
+  transform: rotate(-0.564deg) scale(1, 1);
+  object-fit: cover;
+}
+.image-8 {
+  width: 152.6px;
+  height: 38.32px;
+  position: absolute;
+  left: 1061.97px;
+  top: 840.24px;
+  transform-origin: 0 0;
+  transform: rotate(-0.564deg) scale(1, 1);
+  object-fit: cover;
+}
+.image-1-removebg-preview-1 {
+  width: 260.73px;
+  height: 97px;
+  position: absolute;
+  left: 11px;
+  top: -3px;
+  object-fit: cover;
+  aspect-ratio: 260.73/97;
+}
+.group-8 {
+  position: absolute;
+  inset: 0;
+}
+.rectangle-5 {
+  background: #ffffff;
+  width: 182.74px;
+  height: 309.53px;
+  position: absolute;
+  left: 1000.63px;
+  top: 241.59px;
+}
+.rectangle-7 {
+  background: #ffffff;
+  width: 238.68px;
+  height: 52.21px;
+  position: absolute;
+  left: 974.53px;
+  top: 323.63px;
+}
+.output-onlinepngtools-2-1 {
+  width: 496px;
+  height: 496px;
+  position: absolute;
+  left: 844px;
+  top: 167px;
+  object-fit: cover;
+  aspect-ratio: 1;
+}
