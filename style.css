@@ -1,0 +1,328 @@
+.desktop,
+.desktop * {
+  box-sizing: border-box;
+}
+.desktop {
+  background: #060012;
+  height: 909px;
+  position: relative;
+  overflow: hidden;
+}
+.logo-container {
+  padding: 16px 10px 16px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 796px;
+}
+.logo-bar {
+  background: rgba(217, 217, 217, 0.6);
+  padding: 16px 96px 16px 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1420px;
+  height: 81px;
+  position: absolute;
+  left: 50%;
+  translate: -50% -50%;
+  top: 50%;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.logos {
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 77.76px;
+  position: static;
+}
+.tech-crunch {
+  width: 269.91px;
+  height: 76.01px;
+  position: absolute;
+  left: 96px;
+  top: 3.38px;
+  transform-origin: 0 0;
+  transform: rotate(-0.79deg) scale(1, 1);
+  object-fit: cover;
+}
+.fast-company {
+  width: 311.38px;
+  height: 46.99px;
+  position: absolute;
+  left: 467.3px;
+  top: 20.38px;
+  transform-origin: 0 0;
+  transform: rotate(-0.753deg) scale(1, 1);
+  object-fit: cover;
+}
+.mi-t {
+  width: 121.21px;
+  height: 63.9px;
+  position: absolute;
+  left: 879.97px;
+  top: 13.38px;
+  transform-origin: 0 0;
+  transform: rotate(-0.753deg) scale(1, 1);
+  object-fit: cover;
+}
+.forbes {
+  width: 221.74px;
+  height: 58.12px;
+  position: absolute;
+  left: 1101.47px;
+  top: 16.38px;
+  transform-origin: 0 0;
+  transform: rotate(-0.784deg) scale(1, 1);
+  object-fit: cover;
+}
+.hero {
+  position: absolute;
+  inset: 0;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
+  width: 1440px;
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+  top: 110px;
+}
+.hero-left {
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 63px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 614px;
+  height: 686px;
+  position: relative;
+}
+.header-text-container {
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.header-text {
+  color: #ffffff;
+  text-align: left;
+  font-family: "Raleway-SemiBold", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  position: relative;
+  width: 582px;
+}
+.cta-button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 34px;
+  align-items: center;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  position: relative;
+}
+.geo-score-button {
+  flex-shrink: 0;
+  width: 226.47px;
+  height: 86px;
+  position: static;
+}
+.button-1 {
+  background: #01cded;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 5px;
+  opacity: 0.8;
+  width: 226.47px;
+  height: 86px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.get-free-geo-score {
+  color: #000000;
+  text-align: center;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 47.4px;
+  top: 15px;
+  width: 131.67px;
+  height: 56px;
+}
+.contact-button {
+  flex-shrink: 0;
+  width: 226.47px;
+  height: 86px;
+  position: static;
+}
+.button-2 {
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #ffffff;
+  border-width: 5px;
+  opacity: 0.8;
+  width: 226.47px;
+  height: 86px;
+  position: absolute;
+  left: 260.47px;
+  top: 0px;
+}
+.contact-us {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Raleway-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  left: 307.87px;
+  top: 29px;
+  width: 131.67px;
+  height: 27px;
+}
+.image-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 612px;
+  height: 686px;
+  position: relative;
+}
+.hero-image {
+  padding: 31px 61px 31px 61px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 336px;
+  position: relative;
+}
+.image-glow {
+  background: #aafcff;
+  border-radius: 50%;
+  opacity: 0.6;
+  flex-shrink: 0;
+  width: 440px;
+  height: 274px;
+  position: relative;
+  filter: blur(100px);
+}
+.navigation-bar {
+  padding: 16px 96px 16px 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: -10px;
+}
+.navigation-bar2 {
+  background: #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  gap: 401px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 1440px;
+  height: 104px;
+  position: relative;
+}
+.logo {
+  flex-shrink: 0;
+  width: 246px;
+  height: 91px;
+  position: relative;
+  object-fit: cover;
+  aspect-ratio: 246/91;
+}
+.navigation-links {
+  flex-shrink: 0;
+  width: 595px;
+  height: 26px;
+  position: static;
+}
+.home {
+  color: #000000;
+  text-align: left;
+  font-family: "Raleway-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: underline;
+  position: absolute;
+  left: 746px;
+  top: 39px;
+  width: 104px;
+  height: 25px;
+}
+.services {
+  color: #000000;
+  text-align: left;
+  font-family: "Raleway-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: underline;
+  position: absolute;
+  left: 888px;
+  top: 39px;
+  width: 134px;
+  height: 25px;
+}
+.pricing {
+  color: #000000;
+  text-align: left;
+  font-family: "Raleway-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: underline;
+  position: absolute;
+  left: 1060px;
+  top: 39px;
+  width: 118px;
+  height: 26px;
+}
+.contact {
+  color: #000000;
+  text-align: left;
+  font-family: "Raleway-Medium", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: underline;
+  position: absolute;
+  left: 1216px;
+  top: 39px;
+  width: 125px;
+  height: 26px;
+}
